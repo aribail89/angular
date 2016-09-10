@@ -1,0 +1,39 @@
+<!-- index.html -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+      <!-- SPELLS -->
+      <!-- load angular and angular route via CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+		  	  <script type="text/ng-template" id="add_order1.html">
+    <h2> Add Order </h2>
+    {{message}}
+</script>
+      <script src="app.js"></script>
+
+    </head>
+   <body ng-app="sampleApp">
+ 
+    <div class="container">
+        <div class="row">
+        <div class="col-md-3">
+            <ul class="nav">
+                <li><a href="#AddNewOrder"> Add New Order </a></li>
+                <li><a href="#ShowOrders"> Show Orders </a></li>
+				 <li><a href="#ShowOrder/123"> Show Order </a></li>
+				  <li><a href="#ShowOrder/345"> Show Order </a></li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <div ng-view></div>
+        </div>
+        </div>
+    </div>
+  </body>
+    </html>
